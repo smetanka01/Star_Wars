@@ -2,18 +2,18 @@ import React from 'react';
 import WithSwapi from "../hoc";
 import {ItemDetails, Record} from "../item-details";
 
-const ChildInPlanets = (props) => {
-   return (
-      <ItemDetails {...props}>
+const ChildInPlanets = (View) => {
+   return (props) => {
+      return <View {...props}>
          <Record label='Population' fieldName='population'/>
          <Record label='Rotation Period' fieldName='rotationPeriod'/>
          <Record label='Diameter' fieldName='diameter'/>
-      </ItemDetails>
-   )
+      </View>
+   }
 }
 
 const PlanetDetails = WithSwapi(
-   ChildInPlanets,
+   ChildInPlanets(ItemDetails),
    (swapi) => ({
       getData: swapi.getPlanet,
       getImage: swapi.getPlanetImage

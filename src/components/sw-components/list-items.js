@@ -2,38 +2,28 @@ import React from "react";
 import ItemList from "../item-list";
 import WithSwapi from "../hoc";
 
-// const PeopleList = (props) => {
-//    return (
-//       <ItemList {...props}>
-//          {(data) => data.name}
-//       </ItemList>
-//    )
-// }
-
-const ChildIn = (props) => {
-   return (
-      <ItemList {...props}>
-         {(data) => data.name}
-      </ItemList>
-   )
+const ChildIn = (View, renderFunc) => {
+   return (props) => {
+      return <View {...props}>{renderFunc}</View>
+   }
 }
 
 const PeopleList = WithSwapi(
-   ChildIn,
+   ChildIn(ItemList, (item) => item.name),
    (swapi) => ({
       getData: swapi.getAllPeople
    })
 )
 
 const PlanetList = WithSwapi(
-   ChildIn,
+   ChildIn(ItemList, (item) => item.name),
    (swapi) => ({
       getData: swapi.getAllPlanets
    })
 )
 
 const StarshipsList = WithSwapi(
-   ChildIn,
+   ChildIn(ItemList, (item) => item.name),
    (swapi) => ({
       getData: swapi.getAllStarships
    })

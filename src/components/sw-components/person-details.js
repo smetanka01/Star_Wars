@@ -2,18 +2,19 @@ import React from 'react';
 import WithSwapi from "../hoc";
 import {ItemDetails, Record} from "../item-details";
 
-const ChildInPeople = (props) => {
-   return (
-      <ItemDetails {...props}>
+
+const ChildInPeople = (View) => {
+   return (props) => {
+      return <View {...props}>
          <Record label='Gender' fieldName='gender'/>
          <Record label='Eye color' fieldName='eyeColor'/>
          <Record label='Birth year' fieldName='birthYear'/>
-      </ItemDetails>
-   )
+      </View>
+   }
 }
 
 const PersonDetails = WithSwapi(
-   ChildInPeople,
+   ChildInPeople(ItemDetails),
    (swapi) => ({
       getData: swapi.getPerson,
       getImage: swapi.getPersonImage

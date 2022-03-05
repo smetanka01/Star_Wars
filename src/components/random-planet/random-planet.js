@@ -1,22 +1,21 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React, {useState, useEffect} from 'react';
 import './random-planet.css';
 import Loader from "../loader";
 import ErrorMessage from "../error-message";
-import {Consumer} from "../swapi-context";
+import WithSwapi from "../hoc";
 
-const RandomPlanet = () => {
+const RandomPlanet = ({getData}) => {
 
    const [data, setData] = useState({
       loading: true,
       error: false,
       errorMes: '',
    })
-   const swapi = useContext(Consumer)
 
    useEffect(() => {
       const updatePlanet = () => {
-         const id = Math.floor(Math.random() * (20 - 1) + 1);
-         swapi.getPlanet(id).then(planet => {
+         const id = Math.floor(Math.random() * (20 - 2) + 2);
+         getData.getPlanet(id).then(planet => {
             setData({...data, ...planet, loading: false})
          }).catch(error => {
             setData({...data, loading: false, error: true, errorMes: error.message})
@@ -69,6 +68,10 @@ const RandomPlanet = () => {
    );
 }
 
-export default RandomPlanet;
+const getSwapi = (swapi) => ({
+   getData: swapi
+})
+
+export default WithSwapi(RandomPlanet, getSwapi);
 
 

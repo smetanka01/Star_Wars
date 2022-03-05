@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b6bd1b1-40ae-4225-88dc-c775fef9b458" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/item-details/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Star_Wars.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Star_Wars.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/item-list/item-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-list/item-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/people-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/people-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/person-details/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/person-details/person-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-details/item-details.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/person-details/person-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-details/item-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/planet-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/planet-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/starship-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/starship-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/random-planet/random-planet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/random-planet/random-planet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/swapi-context/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swapi-context/context.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/swapi-context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swapi-context/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sw-components/Starship-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sw-components/Starship-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sw-components/list-items.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sw-components/list-items.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sw-components/person-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sw-components/person-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sw-components/planet-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sw-components/planet-details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/swapi-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/swapi-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +74,7 @@
       <workItem from="1646135882466" duration="8431000" />
       <workItem from="1646212538824" duration="2486000" />
       <workItem from="1646242051947" duration="4884000" />
-      <workItem from="1646409256082" duration="11456000" />
+      <workItem from="1646409256082" duration="23223000" />
     </task>
     <servers />
   </component>
