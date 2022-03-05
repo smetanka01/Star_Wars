@@ -1,4 +1,6 @@
 import React from 'react';
 
-export const Context = React.createContext()
+const {Provider, Consumer} = React.createContext()
+
+export {Provider, Consumer}
 
