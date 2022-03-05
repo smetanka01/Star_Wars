@@ -3,19 +3,19 @@ import WithSwapi from "../hoc";
 import {ItemDetails, Record} from "../item-details";
 
 
-const ChildInStarship = (props) => {
-   return (
-      <ItemDetails {...props}>
+const ChildInStarship = (View) => {
+   return (props) => (
+      <View {...props}>
          <Record label='Model' fieldName='model'/>
          <Record label='Manufacturer' fieldName='manufacturer'/>
          <Record label='cost in credits' fieldName='costInCredits'/>
          <Record label='Passengers' fieldName='passengers'/>
-      </ItemDetails>
+      </View>
    )
 }
 
 const StarshipDetails = WithSwapi(
-   ChildInStarship,
+   ChildInStarship(ItemDetails),
    (swapi) => ({
       getData: swapi.getStarship,
       getImage: swapi.getStarshipImage

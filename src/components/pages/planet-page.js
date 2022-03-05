@@ -1,10 +1,13 @@
-import React, { useState} from 'react';
+import React from 'react';
 import {PlanetList, PlanetDetails} from "../sw-components";
 import Row from "../row";
+import {withRouter} from "react-router-dom";
 
 
-const PlanetPage = () => {
-   const [selectedItemId, setSelectedItemId] = useState(1)
+const PlanetPage = ({ selectedItemId, history}) => {
+   const setSelectedItemId = (id) => {
+      history.push(id)
+   }
 
    const leftElement = <PlanetList setSelectedItemId={setSelectedItemId}/>
    const rightElement = <PlanetDetails  selectedItemId={selectedItemId}/>
@@ -12,4 +15,4 @@ const PlanetPage = () => {
    return <Row left={leftElement} right={rightElement}/>
 }
 
-export default PlanetPage;
+export default withRouter(PlanetPage);
